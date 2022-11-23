@@ -164,7 +164,7 @@ local Toggle1t3 = Tab3:CreateToggle({
 	end,
 })
 local Toggle2t3 = Tab3:CreateToggle({
-	Name = "Auto SmUwUthie (Teleports self/enemy to a random nearby area)",
+	Name = "Auto SmUwUthie (Makes self/enemies text become furry-like)",
 	CurrentValue = false,
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
