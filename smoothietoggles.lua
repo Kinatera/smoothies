@@ -25,10 +25,11 @@ local Toggle = Tab1:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
-		if Value == true then
-		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Angry")
-		wait(2.5)
-		end
+			if not Value then break end;
+			if Value == true then
+				game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Angry")
+				wait(2.5)
+			end
 		end
 	end,
 })
@@ -38,6 +39,7 @@ local Toggle = Tab1:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Damage")
 		wait(2.5)
@@ -51,6 +53,7 @@ local Toggle = Tab1:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Ice")
 		wait(2.5)
@@ -64,6 +67,7 @@ local Toggle = Tab1:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Water")
 		wait(2.5)
@@ -81,6 +85,7 @@ local Toggle = Tab2:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Healing")
 		wait(2.5)
@@ -94,6 +99,7 @@ local Toggle = Tab2:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Resist")
 		wait(2.5)
@@ -107,6 +113,7 @@ local Toggle = Tab2:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Forcefield")
 		wait(2.5)
@@ -124,6 +131,7 @@ local Toggle = Tab3:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Teleport")
 		wait(2.5)
@@ -137,6 +145,7 @@ local Toggle = Tab3:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Slowmo")
 		wait(2.5)
@@ -150,6 +159,7 @@ local Toggle = Tab3:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while wait() do
+		if not Value then break end;
 		if Value == true then
 		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Furry")
 		wait(2.5)
