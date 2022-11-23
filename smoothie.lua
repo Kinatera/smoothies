@@ -40,7 +40,7 @@ local Button = Tab1:CreateButton({
 local Button = Tab1:CreateButton({
 	Name = "Cup Of Water (Wets self/enemy)",
 	Callback = function()
-				game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Ice")
+				game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Water")
 	end,
 })
 local Tab2 = Window:CreateTab("Defense Smoothies", 4483362458) -- Title, Image
@@ -72,7 +72,7 @@ local Section = Tab3:CreateSection("You must have the Blender equipped which is 
 local Button = Tab3:CreateButton({
 	Name = "Sending Strawberry (Teleports self/enemy to a random nearby area)",
 	Callback = function()
-				game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Ice")
+				game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Teleport")
 	end,
 })
 local Button = Tab3:CreateButton({
