@@ -54,7 +54,7 @@ local Button = Tab2:CreateButton({
 	end,
 })
 local Button = Tab2:CreateButton({
-	Name = "Shielded S-B (HP Cannot go below 1 for self/enemy)",
+	Name = "Shielded S-B (Increases defense for self/enemy)",
 	Callback = function()
 				game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Resist")
 	end,
