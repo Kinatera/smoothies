@@ -162,6 +162,97 @@ local Toggle2t3 = Tab3:CreateToggle({
         end
 	end,
 })
-local Tab4 = Window:CreateTab("Credits", 4483362458) -- Title, Image
-local Label = Tab4:CreateLabel("Credits: Kinatera#7917 @Discord - Rayfield UI Lib at discord.gg/sirius")
-local Paragraph = Tab4:CreateParagraph({Title = "Why I made this:", Content = "I loved playing smoothie boy to meme around with others and do all sorts of things like smoothie stands! Although making the smoothies took way too long, this was why I made this little thing quickly, If you're using it please don't abuse it as I love this game, I'd hate to see smoothie boy abused due to this. Anyway have fun and thanks for reading! - Kinatera"})
+local Tab4 = Window:CreateTab("Keybinds", 4483362458) -- Title, Image
+local Keybind1 = Tab4:CreateKeybind({
+	Name = "Power Punch",
+	CurrentKeybind = "KeypadOne",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Angry")
+	end,
+})
+local Keybind2 = Tab4:CreateKeybind({
+	Name = "Benevolent Banana",
+	CurrentKeybind = "KeypadTwo",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Healing")
+	end,
+})
+local Keybind3 = Tab4:CreateKeybind({
+	Name = "Shielded S-B",
+	CurrentKeybind = "KeypadThree",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Resist")
+	end,
+})
+local Keybind4 = Tab4:CreateKeybind({
+	Name = "Cup Of Ice",
+	CurrentKeybind = "KeypadFour",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Ice")
+	end,
+})
+local Keybind5 = Tab4:CreateKeybind({
+	Name = "IFrame Banana",
+	CurrentKeybind = "KeypadFive",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Forcefield")
+	end,
+})
+local Keybind6 = Tab4:CreateKeybind({
+	Name = "Slowberry",
+	CurrentKeybind = "KeypadSix",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Slowmo")
+	end,
+})
+local Keybind7 = Tab4:CreateKeybind({
+	Name = "Sending Strawberry",
+	CurrentKeybind = "KeypadSeven",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Teleport")
+	end,
+})
+local Keybind8 = Tab4:CreateKeybind({
+	Name = "Harsh Berry",
+	CurrentKeybind = "KeypadEight",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Damage")
+	end,
+})
+local Keybind9 = Tab4:CreateKeybind({
+	Name = "Cup Of Water",
+	CurrentKeybind = "KeypadNine",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Water")
+	end,
+})
+local Keybind10 = Tab4:CreateKeybind({
+	Name = "SmUwUthie",
+	CurrentKeybind = "KeypadPlus",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		game:GetService("Players").LocalPlayer.Character.Blender.Create:FireServer("Furry")
+	end,
+})
+local Tab5 = Window:CreateTab("Credits", 4483362458) -- Title, Image
+local Label = Tab5:CreateLabel("Credits: Kinatera#7917 @Discord - Rayfield UI Lib at discord.gg/sirius")
+local Paragraph = Tab5:CreateParagraph({Title = "Why I made this:", Content = "I loved playing smoothie boy to meme around with others and do all sorts of things like smoothie stands! Although making the smoothies took way too long, this was why I made this little thing quickly, If you're using it please don't abuse it as I love this game, I'd hate to see smoothie boy abused due to this. Anyway have fun and thanks for reading! - Kinatera"})
