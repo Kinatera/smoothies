@@ -256,3 +256,9 @@ local Keybind10 = Tab4:CreateKeybind({
 local Tab5 = Window:CreateTab("Credits", 4483362458) -- Title, Image
 local Label = Tab5:CreateLabel("Credits: Kinatera#7917 @Discord - Rayfield UI Lib at discord.gg/sirius")
 local Paragraph = Tab5:CreateParagraph({Title = "Why I made this:", Content = "I loved playing smoothie boy to meme around with others and do all sorts of things like smoothie stands! Although making the smoothies took way too long, this was why I made this little thing quickly, If you're using it please don't abuse it as I love this game, I'd hate to see smoothie boy abused due to this. Anyway have fun and thanks for reading! - Kinatera"})
+local Button = Tab5:CreateButton({
+	Name = "Go back to the loader to change Smoothie Addiction version.",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinatera/smoothies/main/loader.lua"))()
+	end,
+})
