@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local Window = Rayfield:CreateWindow({
-	Name = "Smoothie Addiction",
+	Name = "Smoothie Addiction Loader",
 	LoadingTitle = "creating smoothies...",
 	LoadingSubtitle = "by Kinatera#7917",
 	ConfigurationSaving = {
